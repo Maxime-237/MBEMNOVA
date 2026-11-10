@@ -8,6 +8,9 @@ const routes = [
   { path: '/portfolio', name: 'portfolio', component: () => import('../views/PortfolioView.vue') },
   { path: '/blog', name: 'blog', component: () => import('../views/BlogView.vue') },
   { path: '/contact', name: 'contact', component: () => import('../views/ContactView.vue') },
+  { path: '/carrieres', name: 'careers', component: () => import('../views/CareersView.vue') },
+  { path: '/stage', name: 'internship', component: () => import('../views/InternshipView.vue') },
+  { path: '/services/:pole', name: 'service-detail', component: () => import('../views/ServiceDetailView.vue') },
 ]
 
 export default createRouter({

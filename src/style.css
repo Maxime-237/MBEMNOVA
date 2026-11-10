@@ -6,6 +6,7 @@
 
     --color-ink: #0a1642;
     --color-navy: #032c96;
+    --color-night: #020f48;
     --color-accent: #fff200;
     --color-brand-700: #07349b;
     --color-brand-600: #0c55c4;
@@ -14,23 +15,26 @@
     --color-brand-300: #38bdf8;    
 
     --breakpoint-xs: 375px;
+    --container-site: 103rem;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
 
-body {
-    font-family: var(--font-sans);
-    color: var(--color-ink);
-    background: #fff;
-    -webkit-font-smoothing: antialiased;
-}
+    body {
+        font-family: var(--font-sans);
+        color: var(--color-ink);
+        background: #fff;
+        -webkit-font-smoothing: antialiased;
+    }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: var(--font-display);
-    font-weight: 800;
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: var(--font-display);
+        font-weight: 800;
+    }
 }

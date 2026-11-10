@@ -29,7 +29,7 @@ watch(() => route.path, () => {
   
   <header class="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-5 sm:pt-4">
 
-    <nav class="relative mx-auto flex max-w-7xl items-center justify-between rounded-full bg-linear-to-r from-white to-brand-300/25 px-3 py-2.5 shadow-brand-700/10 backdrop-blur sm:px-4">
+        <nav class="relative mx-auto flex max-w-325 items-center justify-between rounded-full bg-white/90 px-3 py-2.5 shadow-xl shadow-brand-700/10 backdrop-blur-md sm:px-4">
 
         <RouterLink to="/" aria-label="MBEMNOVA, accueil">
             <img :src="logo" alt="Logo MBEMNOVA" class="h-11 w-11 rounded-full">
@@ -40,8 +40,8 @@ watch(() => route.path, () => {
             <li v-for="link in links" :key="link.to">
 
                 <RouterLink :to="link.to"
-                    class="relative pb-1 text-sm font-medium transition-colors hover:text-brand-500"
-                    :class="isActive(link.to) ? 'text-navy after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:rounded-full after:bg-brand-500' : 'text-ink/80'"
+                    class="relative pb-1 text-base font-medium transition-colors hover:text-brand-500"
+                    :class="isActive(link.to) ? 'font-semibold text-navy after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 after:rounded-full after:bg-brand-500' : 'text-ink/80'"
                 >
                     {{ link.label }}
                 </RouterLink>
